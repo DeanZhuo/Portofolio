@@ -1,1 +1,22 @@
-@import "styles.css"
+@import "styles.css";
+ 
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contacts > div {
+    text-align: center;
+}
+#pic-credits {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+#pic-credits > a {
+    margin-left: 10px;
+}
+#pic-credits > p {
+    margin-top: 10px;
+}

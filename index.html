@@ -8,97 +8,98 @@
     <body>
         <header>
             <!-- navigation -->
-            <img alt="DeanZhuo" src="asset/PersonalLogo.svg" width="50px">
+            <img alt="DeanZhuo" src="asset/PersonalLogo.png" width="60px">
             <nav>
-                <a href="index.html">Home</a>
+                <a class="active" href="index.html">Home</a>
                 <a href="profile.html">Our Profile</a>
                 <a href="portofolio.html" >Portofolio</a>
                 <a href="contact.html">Message Us</a>
             </nav>
         </header>
         <!-- main content -->
-        <main>
+        <main class="container">
             <!-- greetings -->
-            <div>
-                <img alt="DeanZhuo-dark" width="250px" src="asset/PersonalEdit.png">
-
+            <div class="img-text reverse">
+                <img class="img-big" alt="DeanZhuo-dark" src="asset/PersonalEdit.png">
                 <div>
-                    <h2>Hi <p>Dean</p>! DeanZhuo Dev Team here!</h2>
-                    <h4>A software development team consist of Me, Myself, and I!</h4>
+                    <h1>Hi <span>Dean</span>! DeanZhuo Dev Team here!</h1>
+                    <h3>A software development team consist of Me, Myself, and I!</h3>
                     <a href="profile.html"><button>See Our Profile!</button></a>
                 </div>
             </div>
             <!-- headquarter -->
             <div>
-                <h4>Headquarters</h4>
-                <div>
+                <h1>Headquarters</h1>
+                <div class="headquarter">
                     <div>
-                        <img alt="Rantauprapat" width="80px" src="asset/Rantauprapat.jpg">
+                        <img class="round" alt="Rantauprapat" width="80px" src="asset/Rantauprapat.jpg">
                         <h4>Rantauprapat</h4>
                     </div>
                     <div>
-                        <img alt="Jogja" width="80px" src="asset/Jogja.jpg">
+                        <img class="round" alt="Jogja" width="80px" src="asset/Jogja.jpg">
                         <h4>Jogjakarta</h4>
                     </div>
                     <div>
-                        <img alt="Jakarta" width="80px" src="asset/Jakarta.jpg">
+                        <img class="round" alt="Jakarta" width="80px" src="asset/Jakarta.jpg">
                         <h4>Jakarta</h4>
                     </div>
                     <h4>And more to come!</h4>
                 </div>
             </div>
             <!-- portofolio -->
-            <div>
-                <img alt="Portofolio" width="220px" src="asset/Portofolio.png">
+            <div class="img-text">
+                <img class="img-big" alt="Portofolio" src="asset/Portofolio.png">
                 <div>
-                    <h2>We've been making this and that...</h2>
-                    <h4>Check what I mean by this and that!</h4>
+                    <h1>We've been making this and that...</h1>
+                    <h3>Check what I mean by this and that!</h3>
                     <a href="portofolio.html"><button>Take me there!</button></a>
                 </div>
             </div>
             <!-- data collection -->
             <div>
                 <h2>Tell me about yourself!</h2>
-                <form action="index.html" method="post">
-                    <div>
+                <div class="data-form">
+                    <form id="sender-form">
                         <label for="fName">First Name</label>
-                        <br>
                         <input type="text" name="fName" id="fName" placeholder="Dean">
-                    </div>
-                    <div>
                         <label for="lName">Last Name</label>
-                        <br>
                         <input type="text" name="lName" id="lName" placeholder="Thomas">
-                    </div>
-                    <div>
                         <label for="pNumber">Phone Number</label>
-                        <br>
                         <input type="text" name="pNumber" id="pNumber" placeholder="+6281234567890">
-                    </div>
-                    <div>
                         <label for="email">Email</label>
-                        <br>
                         <input type="email" name="email" id="email" placeholder="youremail@address.com">
-                    </div>
-                    <div>
                         <label for="message">Message</label>
-                        <br>
                         <textarea name="message" id="message" placeholder="Your message"></textarea>
+                        <input class="form-submit" id="form-submit" type="submit" value="Nice to meet you!">
+                    </form>
+                    <div class="data-display">
+                        <h3>Thank you!</h3>
+                        <h4>Full Name: </h4>
+                        <h4><span id="display-fullname">Dean Thomas</span></h4>
+                        <h4>Phone Number: </h4>
+                        <h4><span id="display-pNumber">+6281234567890</span></h4>
+                        <h4>Email: </h4>
+                        <h4><span id="display-email">youremail@address.com</span></h4>
+                        <h4>Message: </h4>
+                        <h4><span id="display-message">Your message</span></h4>
                     </div>
-                    <input type="submit" value="Nice to meet you!">
-                </form>
+                </div>
             </div>
         </main>
         <!-- footer -->
         <footer>
             <!-- links -->
-            <div>
-                <h5>There's more!</h5>
+            <div class="container">
+                <h3>There's more!</h3>
                 <a href="profile.html" >Our Profile</a>
                 <a href="portofolio.html" >Portofolio</a>
                 <a href="contact.html">Message Us</a>
             </div>
-            <h4>Created for <a href="https://revou.co/" target="_blank"><img alt="RevoU" width="30px" src="asset/RevoU.png"> RevoU Mini Course</a></h4>
+            <div class="container credit">
+                <h4>Created for</h4>
+                <img alt="RevoU" width="30px" src="asset/RevoU.png">
+                <a href="https://revou.co/" target="_blank"> RevoU Mini Course</a>
+            </div>
         </footer>
     </body>
 </html>

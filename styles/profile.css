@@ -1,1 +1,7 @@
-@import "styles.css"
+@import "styles.css";
+
+.img-small {
+    width: 160px;
+    height: 100%;
+    margin-left: 20px;
+}

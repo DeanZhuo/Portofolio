@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: azure;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 ol, ul {
@@ -42,4 +43,131 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+/* header */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	background-color: azure;
+}
+nav > a {
+	padding: 16px;
+	text-align: center;
+	color: #1b6cb4;
+	text-decoration: none;
+}
+nav > a.active {
+	background-color: #1b6cb4;
+	color: azure;
+}
+nav > a:hover {
+	background-color: #1b6cb4;
+	color: azure;
+}
+header > img {
+	margin-right: auto;
+}
+/* content */
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding: 30px 0px;
+}
+.container {
+	max-width: 800px;
+	width: 100%;
+	margin: auto;
+	padding: 15px;
+	background-color: white;
+
+}
+.img-text {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+.img-text.reverse {
+	flex-direction: row-reverse;
+}
+.img-text > div {
+	margin: 20px 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+/* images */
+.img-big {
+	width: 250px;
+	height: 100%;
+}
+.img-mid {
+	width: 220px;
+	height: 100%;
+}
+.round {
+	border-radius: 50%;
+}
+/* button */
+button {
+	color: azure;
+	background-color: #1b6cb4;
+	border: 1px solid #1b6cb4;
+	padding: 15px;
+	font-weight: 550;
+	font-size: medium;
+}
+button:hover {
+	background-color: azure;
+	color: #1b6cb4;
+}
+/* form */
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+input, textarea {
+    margin-left: 5px;
+    padding: 10px;
+}
+.form-submit {
+    color: azure;
+    background-color: #1b6cb4;
+    border: 1px solid #1b6cb4;
+    border: px;
+    padding: 10px;
+    font-weight: 550;
+    font-size: medium;
+    text-align: center;
+    width: 180px;
+    margin-left: 0px;
+}
+.form-submit:hover {
+    background-color: azure;
+    color: #1b6cb4;
+}
+/* footer */
+footer, footer > .container {
+	background-color: #8cccfc;
+	padding: 20px 0px;
+}
+footer > div {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+div > a {
+	color: black;
+	text-decoration: none;
+}
+.credit{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.credit > a {
+	font-weight: 500;
 }

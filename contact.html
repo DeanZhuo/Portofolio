@@ -3,27 +3,28 @@
     <head>
         <title>Our Profile | SEFC </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/profile.css">
+        <link rel="stylesheet" href="styles/contact.css">
     </head>
     <body>
         <header>
             <!-- navigation -->
-            <img alt="DeanZhuo" src="asset/PersonalLogo.svg" width="50px">
+            <img alt="DeanZhuo" src="asset/PersonalLogo.png" width="60px">
             <nav>
                 <a href="index.html">Home</a>
                 <a href="profile.html">Our Profile</a>
-                <a href="portofolio.html">Portofolio</a>
-                <a href="contact.html">Message Us</a>
+                <a href="portofolio.html" >Portofolio</a>
+                <a class="active" href="contact.html">Message Us</a>
             </nav>
         </header>
         <!-- main content -->
-        <main>
+        <main class="container">
+            <h2>Contact me here!</h2>
             <!-- media -->
-            <div>
+            <div class="contacts">
                 <div>
                     <img alt="LinkedIn" width="80px" src="asset/LinkedIn.png">
                     <h4>LinkedIn</h4>
-                    <a href="https://www.linkedin.com/in/tf-thomas/" target="_blank"><h5>Triska Florencia Thomas</h5></a>
+                    <a href="https://www.linkedin.com/in/tf-thomas/" target="_blank"><h5>Triska Florencia<br>Thomas</h5></a>
                 </div>
                 <div>
                     <img alt="GitHub" width="80px" src="asset/GitHub.png">
@@ -41,46 +42,38 @@
                     <a href="https://www.facebook.com/dean.zhuo.16" target="_blank"><h5>Dean Zhuo</h5></a>                
                 </div>
             </div>
-            <!-- mail -->
-            <div>
-                <h4>Send me an email</h4>
-                <form>
-                    <form action="contact.html" method="post">
-                        <div>
-                            <label for="name">Your Name</label>
-                            <br>
-                            <input type="text" name="name" id="name" placeholder="Dean">
-                        </div>
-                        <div>
-                            <label for="subject">Subject</label>
-                            <br>
-                            <input type="text" name="subject" id="subject" placeholder="Subject">
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <br>
-                            <input type="email" name="email" id="email" placeholder="youremail@address.com">
-                        </div>
-                        <div>
-                            <label for="message">Message</label>
-                            <br>
-                            <textarea name="message" id="message" placeholder="Your message"></textarea>
-                        </div>
-                        <input type="submit" value="Send email!">
-                    </form>
-                </form>
+            <!-- credits -->
+            <div id="pic-credits">
+                <h2>Credits: Pictures and Icons</h2>
+                <br>
+                <a href="https://www.revou.co" title="RevoU Site">RevoU logo created by RevoU</a>
+                <a href="https://www.instagram.com/felinaliem/" title="Felina's Instagram Profile">DeanZhuo logos drawn by Felina</a>
+                <a href="https://www.flaticon.com/free-icons/honest" title="Honest Icons">Honest icons created by Freepik - Flaticon</a>
+                <a href="https://www.flaticon.com/free-stickers/creativity" title="Creativity Stickers">Creativity stickers created by inipagistudio - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/punctual" title="Punctual Icons">Punctual icons created by DinosoftLabs - Flaticon</a>
+                <a href="https://www.flaticon.com/free-stickers/tasks" title="Tasks Stickers">Tasks stickers created by Stickers - Flaticon</a>
+                <a href="https://www.flaticon.com/free-stickers/blog" title="Blog Stickers">Blog stickers created by inipagistudio - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/linkedin" title="Linkedin Icons">Linkedin icons created by Freepik - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/github" title="Github Icons">Github icons created by Freepik - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/twitter" title="Twitter Icons">Twitter icons created by Freepik - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/facebook" title="Facebook Icons">Facebook icons created by Freepik - Flaticon</a>
+                <p>Pictures in Headquarters (Home Page) and profile taken by DeanZhuo & Co.</p>
             </div>
         </main>
         <!-- footer -->
         <footer>
             <!-- links -->
-            <div>
-                <h5>There's more!</h5>
-                <a href="index.html" >Home</a>
+            <div class="container">
+                <h3>There's more!</h3>
                 <a href="profile.html" >Our Profile</a>
-                <a href="portofolio.html">Portofolio</a>
+                <a href="portofolio.html" >Portofolio</a>
+                <a href="contact.html">Message Us</a>
             </div>
-            <h4>Created for <a href="https://revou.co/" target="_blank"><img alt="RevoU" width="30px" src="asset/RevoU.png"> RevoU Mini Course</a></h4>
+            <div class="container credit">
+                <h4>Created for</h4>
+                <img alt="RevoU" width="30px" src="asset/RevoU.png">
+                <a href="https://revou.co/" target="_blank"> RevoU Mini Course</a>
+            </div>
         </footer>
     </body>
 </html>
