@@ -2,6 +2,7 @@
 
 .headquarter {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 30px;
     justify-content: flex-start;
@@ -16,11 +17,37 @@
 }
 .data-form {
     display: flex;
+    flex-direction: column;
     gap: 40px;
     margin-top: 20px;
 }
 .data-form > form {
     flex: 1;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+input, textarea {
+    margin-left: 5px;
+    padding: 10px;
+}
+.form-submit {
+    color: azure;
+    background-color: #1b6cb4;
+    border: 1px solid #1b6cb4;
+    border: px;
+    padding: 10px;
+    font-weight: 550;
+    font-size: medium;
+    text-align: center;
+    width: 180px;
+    margin-left: 0px;
+}
+.form-submit:hover {
+    background-color: azure;
+    color: #1b6cb4;
 }
 .data-display {
     flex: 1;
@@ -31,4 +58,22 @@
 .data-display > h3 {
     grid-column-start: 1;
     grid-column-end: 3;
+}
+/* media query */
+@media only screen and (min-width: 375px){
+
+}
+@media only screen and (min-width: 425px){
+
+}
+@media only screen and (min-width: 768px){
+    .headquarter {
+        flex-direction: row;
+    }
+    .data-form {
+        flex-direction: row;
+    }
+}
+@media only screen and (min-width: 1024px){
+
 }

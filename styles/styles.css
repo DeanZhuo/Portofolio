@@ -51,6 +51,9 @@ header {
 	justify-content: flex-end;
 	background-color: azure;
 }
+nav {
+	display: none;
+}
 nav > a {
 	padding: 16px;
 	text-align: center;
@@ -72,12 +75,11 @@ header > img {
 main {
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
+	gap: 20px;
 	padding: 30px 0px;
 }
 .container {
 	max-width: 800px;
-	width: 100%;
 	margin: auto;
 	padding: 15px;
 	background-color: white;
@@ -85,11 +87,11 @@ main {
 }
 .img-text {
 	display: flex;
-	flex-direction: row;
-	gap: 30px;
+	flex-direction: column;
+	gap: 10px;
 }
 .img-text.reverse {
-	flex-direction: row-reverse;
+	flex-direction: column;
 }
 .img-text > div {
 	margin: 20px 0px;
@@ -114,7 +116,7 @@ button {
 	color: azure;
 	background-color: #1b6cb4;
 	border: 1px solid #1b6cb4;
-	padding: 15px;
+	padding: 10px;
 	font-weight: 550;
 	font-size: medium;
 }
@@ -122,36 +124,10 @@ button:hover {
 	background-color: azure;
 	color: #1b6cb4;
 }
-/* form */
-form {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-input, textarea {
-    margin-left: 5px;
-    padding: 10px;
-}
-.form-submit {
-    color: azure;
-    background-color: #1b6cb4;
-    border: 1px solid #1b6cb4;
-    border: px;
-    padding: 10px;
-    font-weight: 550;
-    font-size: medium;
-    text-align: center;
-    width: 180px;
-    margin-left: 0px;
-}
-.form-submit:hover {
-    background-color: azure;
-    color: #1b6cb4;
-}
 /* footer */
 footer, footer > .container {
 	background-color: #8cccfc;
-	padding: 20px 0px;
+	padding: 20px 15px;
 }
 footer > div {
 	display: flex;
@@ -163,11 +139,38 @@ div > a {
 	text-decoration: none;
 }
 .credit{
-	margin-top: 30px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: flex-end;
 }
 .credit > a {
 	font-weight: 500;
+}
+/* media query */
+@media only screen and (min-width: 375px){
+
+}
+@media only screen and (min-width: 425px){
+
+}
+@media only screen and (min-width: 768px){
+	nav {
+		display: block;
+	}
+	.img-text {
+		flex-direction: row;
+		gap: 30px;
+	}
+	.img-text.reverse {
+		flex-direction: row-reverse;
+	}
+}
+@media only screen and (min-width: 1024px){
+	.img-text {
+		flex-direction: row;
+	}
+	.img-text.reverse {
+		flex-direction: row-reverse;
+	}
 }

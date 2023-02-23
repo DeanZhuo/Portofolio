@@ -1,8 +1,9 @@
 @import "styles.css";
  
 .contacts {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
     justify-content: space-evenly;
 }
 .contacts > div {
@@ -19,4 +20,21 @@
 }
 #pic-credits > p {
     margin-top: 10px;
+}
+/* media query */
+@media only screen and (min-width: 375px){
+
+}
+@media only screen and (min-width: 425px){
+
+}
+@media only screen and (min-width: 768px){
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (min-width: 1024px){
+
 }
