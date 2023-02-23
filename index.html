@@ -13,7 +13,7 @@
                 <a class="active" href="index.html">Home</a>
                 <a href="profile.html">Our Profile</a>
                 <a href="portofolio.html" >Portofolio</a>
-                <a href="contact.html">Message Us</a>
+                <a href="contact.html">Contact Us</a>
             </nav>
         </header>
         <!-- main content -->
@@ -22,7 +22,7 @@
             <div class="img-text reverse">
                 <img class="img-big" alt="DeanZhuo-dark" src="asset/PersonalEdit.png">
                 <div>
-                    <h1>Hi <span id="username">Dean</span>! DeanZhuo Dev Team here!</h1>
+                    <h1>Hi<span id="username"></span>! DeanZhuo Dev Team here!</h1>
                     <h3>A software development team consist of Me, Myself, and I!</h3>
                     <a href="profile.html"><button>See Our Profile!</button></a>
                 </div>
@@ -86,7 +86,7 @@
                     <!-- scripts -->
                     <script>
                         var username = prompt("Enter your name:", "Dean");
-                        document.getElementById("username").innerText = username;
+                        document.getElementById("username").innerText = " " + username;
                         console.log("Hi " + username);
 
                         function validateForm() {
@@ -106,6 +106,8 @@
                             document.getElementById("display-email").innerText = email;
                             document.getElementById("display-message").innerText = message;
 
+                            document.getElementById("username").innerText = " " + name;
+
                             return false;
                         }
                     </script>
@@ -120,7 +122,7 @@
                 <a href="index.html">Home Page</a>
                 <a href="profile.html">Our Profile</a>
                 <a href="portofolio.html">Portofolio</a>
-                <a href="contact.html">Message Us</a>
+                <a href="contact.html">Contact Us</a>
             </div>
             <div class="container credit">
                 <h4>Created for</h4>
