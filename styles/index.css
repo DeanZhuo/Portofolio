@@ -15,6 +15,9 @@
     align-items: center;
     gap: 10px;
 }
+.headquarter > div > img {
+    width: 150px;
+}
 .data-form {
     display: flex;
     flex-direction: column;

@@ -47,29 +47,72 @@ table {
 /* header */
 header {
 	display: flex;
+}
+.navi-text {
+	display: none;
+	flex-direction: row;
 	align-items: center;
 	justify-content: flex-end;
 	background-color: azure;
 }
-nav {
-	display: none;
-}
-nav > a {
-	padding: 16px;
+.navi-text > a {
+	padding: 10px;
 	text-align: center;
 	color: #1b6cb4;
 	text-decoration: none;
+	display: flex;
+    align-items: center;
+    gap: 10px;
 }
-nav > a.active {
+.navi-text > a.active {
 	background-color: #1b6cb4;
 	color: azure;
 }
-nav > a:hover {
+.navi-text > a:hover {
 	background-color: #1b6cb4;
 	color: azure;
+}
+.navi-text {
+	display: none;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	background-color: azure;
+}
+.navi-text > a {
+	padding: 10px;
+	text-align: center;
+	color: #1b6cb4;
+	text-decoration: none;
+	display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navi-text > a.active {
+	background-color: #1b6cb4;
+	color: azure;
+}
+.navi-text > a:hover {
+	background-color: #1b6cb4;
+	color: azure;
+}.navi-icon {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: azure;
+}
+.navi-icon > a {
+	padding: 10px;
+}
+.navi-icon > a.active {
+	background-color: #1b6cb4;
 }
 header > img {
 	margin-right: auto;
+}
+a > img {
+	width: 25px;
+	height: 100%;
 }
 /* content */
 main {
@@ -155,8 +198,11 @@ div > a {
 
 }
 @media only screen and (min-width: 768px){
-	nav {
-		display: block;
+	.navi-text {
+		display: flex;
+	}
+	.navi-icon {
+		display: none;
 	}
 	.img-text {
 		flex-direction: row;
