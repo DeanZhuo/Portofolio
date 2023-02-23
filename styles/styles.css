@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-color: azure;
+	background-color: #8cccfc;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 ol, ul {
@@ -47,18 +47,19 @@ table {
 /* header */
 header {
 	display: flex;
+	background-color: #73baed;
 }
+/* navigation - text (big screen) */
 .navi-text {
 	display: none;
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-end;
-	background-color: azure;
 }
 .navi-text > a {
 	padding: 10px;
 	text-align: center;
-	color: #1b6cb4;
+	color: azure;
 	text-decoration: none;
 	display: flex;
     align-items: center;
@@ -67,39 +68,18 @@ header {
 .navi-text > a.active {
 	background-color: #1b6cb4;
 	color: azure;
+	border-radius: 5px;
 }
 .navi-text > a:hover {
 	background-color: #1b6cb4;
 	color: azure;
+	border-radius: 5px;
 }
-.navi-text {
-	display: none;
-	flex-direction: row;
-	align-items: center;
-	justify-content: flex-end;
-	background-color: azure;
-}
-.navi-text > a {
-	padding: 10px;
-	text-align: center;
-	color: #1b6cb4;
-	text-decoration: none;
-	display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.navi-text > a.active {
-	background-color: #1b6cb4;
-	color: azure;
-}
-.navi-text > a:hover {
-	background-color: #1b6cb4;
-	color: azure;
-}.navi-icon {
+/* navigation - icons (small screen) */
+.navi-icon {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background-color: azure;
 }
 .navi-icon > a {
 	padding: 10px;
@@ -107,8 +87,10 @@ header {
 .navi-icon > a.active {
 	background-color: #1b6cb4;
 }
+/* navigation's image */
 header > img {
 	margin-right: auto;
+	margin-left: 5px;
 }
 a > img {
 	width: 25px;
@@ -125,8 +107,7 @@ main {
 	max-width: 800px;
 	margin: auto;
 	padding: 15px;
-	background-color: white;
-
+	background-color: #e8f5fe;
 }
 .img-text {
 	display: flex;
@@ -155,30 +136,34 @@ main {
 	border-radius: 50%;
 }
 /* button */
-button {
+.button-anchor {
 	color: azure;
 	background-color: #1b6cb4;
 	border: 1px solid #1b6cb4;
 	padding: 10px;
+	text-align: center;
 	font-weight: 550;
 	font-size: medium;
+	border-radius: 5px;
+	width: 150px;
 }
-button:hover {
+.button-anchor:hover {
 	background-color: azure;
 	color: #1b6cb4;
 }
 /* footer */
 footer, footer > .container {
-	background-color: #8cccfc;
+	background-color: #1b6cb4;
 	padding: 20px 15px;
 }
 footer > div {
+	color: azure;
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
 }
 div > a {
-	color: black;
+	color: azure;
 	text-decoration: none;
 }
 .credit{
@@ -218,5 +203,8 @@ div > a {
 	}
 	.img-text.reverse {
 		flex-direction: row-reverse;
+	}
+	main > .container {
+		gap: 30px;
 	}
 }

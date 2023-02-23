@@ -9,6 +9,7 @@
         <header>
             <!-- navigation -->
             <img alt="DeanZhuo" src="asset/PersonalLogo.png" width="60px">
+            <!-- navigation - text -->
             <div class="navi-text">
                 <a class="active" href="index.html">
                     <img src="asset/HomePage.png">
@@ -27,18 +28,19 @@
                     Contact Us
                 </a>
             </div>
+            <!-- navigation - icon -->
             <div class="navi-icon">
                 <a class="active" href="index.html">
-                    <img src="asset/HomePage.png">
+                    <img alt="Home" src="asset/HomePage.png">
                 </a>
                 <a href="profile.html">
-                    <img src="asset/OurProfile.png">
+                    <img alt="Profile" src="asset/OurProfile.png">
                 </a>
                 <a href="portofolio.html" >
-                    <img src="asset/PortofolioPage.png">
+                    <img alt="Portofolio" src="asset/PortofolioPage.png">
                 </a>
                 <a href="contact.html">
-                    <img src="asset/ContactUs.png">
+                    <img alt="Contact" src="asset/ContactUs.png">
                 </a>
             </div>
         </header>
@@ -50,7 +52,7 @@
                 <div>
                     <h1>Hi<span id="username"></span>! DeanZhuo Dev Team here!</h1>
                     <h3>A software development team consist of Me, Myself, and I!</h3>
-                    <a href="profile.html"><button>See Our Profile!</button></a>
+                    <a class="button-anchor" href="profile.html">See Our Profile!</a>
                 </div>
             </div>
             <!-- headquarter -->
@@ -78,13 +80,14 @@
                 <div>
                     <h1>We've been making this and that...</h1>
                     <h3>Check what I mean by this and that!</h3>
-                    <a href="portofolio.html"><button>Take me there!</button></a>
+                    <a class="button-anchor" href="portofolio.html">Take me there!</a>
                 </div>
             </div>
             <!-- data collection -->
             <div>
                 <h2>Tell me about yourself!</h2>
                 <div class="data-form">
+                    <!-- collection form -->
                     <form name="sender-form" onsubmit="return validateForm()">
                         <label for="fName">First Name</label>
                         <input type="text" name="fName" id="fName" placeholder="Dean">
@@ -98,6 +101,7 @@
                         <textarea name="message" id="message" placeholder="Your message"></textarea>
                         <input class="form-submit" id="form-submit" type="submit" value="Nice to meet you!">
                     </form>
+                    <!-- display result -->
                     <div class="data-display">
                         <h3>Thank you!</h3>
                         <h4>Full Name: </h4>
@@ -110,33 +114,7 @@
                         <h4><span id="display-message">Your message</span></h4>
                     </div>
                     <!-- scripts -->
-                    <script>
-                        var username = prompt("Enter your name:", "Dean");
-                        document.getElementById("username").innerText = " " + username;
-                        console.log("Hi " + username);
-
-                        function validateForm() {
-                            var name = document.forms["sender-form"]["fName"].value
-                            + " " + document.forms["sender-form"]["lName"].value;
-                            var pNumber = document.forms["sender-form"]["pNumber"].value;
-                            var email = document.forms["sender-form"]["email"].value;
-                            var message = document.forms["sender-form"]["message"].value;
-
-                            if (name == " " || pNumber == "" || email == "" || message == "") {
-                                alert("Please don't leave any of the form empty before submitting it");
-                                return false;
-                            }
-
-                            document.getElementById("display-fullname").innerText = name;
-                            document.getElementById("display-pNumber").innerText = pNumber;
-                            document.getElementById("display-email").innerText = email;
-                            document.getElementById("display-message").innerText = message;
-
-                            document.getElementById("username").innerText = " " + name;
-
-                            return false;
-                        }
-                    </script>
+                    <script src="js/index.js"></script>
                 </div>
             </div>
         </main>
