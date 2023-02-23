@@ -86,6 +86,7 @@ header {
 }
 .navi-icon > a.active {
 	background-color: #1b6cb4;
+	border-radius: 5px;
 }
 /* navigation's image */
 header > img {
@@ -135,7 +136,11 @@ main {
 .round {
 	border-radius: 50%;
 }
-/* button */
+/* anchor */
+div > a {
+    text-decoration: none;
+    color: black;
+}
 .button-anchor {
 	color: azure;
 	background-color: #1b6cb4;
@@ -162,7 +167,7 @@ footer > div {
 	flex-direction: column;
 	gap: 5px;
 }
-div > a {
+.container > a {
 	color: azure;
 	text-decoration: none;
 }
